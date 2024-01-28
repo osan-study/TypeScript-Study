@@ -2,6 +2,7 @@
 > 범위: 2.1 ~ 2.15 
 
 ## 기본 타입
+
 타입 스크립트 사용시에는 어떠한 타입을 부여할지 알고 표기해야한다. 
 기본 타입은 아래와 같다. 
 - string
@@ -14,8 +15,8 @@
 - object
 
 ### 변수에 사용
-``` typescript
 
+``` typescript
 const str: string='hello'
 const num: number = 123
 const bool: boolean = false
@@ -28,6 +29,7 @@ const obj: object = {hello: 'world'}
 
 
 ### 함수에 사용
+
 ``` typescript
 // 선언형 함수
 function plus(x: number, y: number): number {
@@ -59,9 +61,11 @@ const nulRel = null     // 타입은 null
 >다만, 실제로 사용하는 경우 생각보다 꽤 까다로운 설정이 되게 되어 있으므로, 여러 방향으로 생각해 볼것!!
 
 #### Tip: `{}` 표현
+
 **`{}`** 표현 은 객체를 의미하는 것이 아니라 null과 undefined를 제외한 모든 타입을 의미
 
 #### Tip2: 타입에러 무시방법 `@ts..`
+
 - `//@ts-ignore` 에러나는 코드 윗줄(에러발생 | 미발생 관계 없음)에 
                             주석으로 달아주면 에러를 무시하는 코드로 처리됨(일부만 적용가능)
 - `//@ts-expect-error` 다음줄에 에러가 난다면 무시하는 코드로 에러가 나지 않으면 에러발생하는 코드 
@@ -72,6 +76,7 @@ const nulRel = null     // 타입은 null
 
 ---
 ## 리터럴 타입
+
 타입스크립트는 자바스크립트가 가지는 특징인 표현의 자유 
 즉, 타입전환의 자유등을 포기하고 안정성을 가지는 언어이다. 
 
