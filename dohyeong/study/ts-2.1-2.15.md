@@ -34,7 +34,7 @@ function plus(x: number, y: number): number {
 	return x+y
 }
 
-// 화살표 함수 | 표현식 함수
+// 화살표 함수 | 표현식 함수 
 const minus = (x:number, y:number):number=>x+y
 ```
 
